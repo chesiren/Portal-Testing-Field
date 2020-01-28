@@ -9,6 +9,11 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        thePlayer.transform.position = teleportTarget.transform.position;
+        Vector3 myVector = new Vector3(0,0,-1);
+        thePlayer.transform.position = teleportTarget.transform.position + myVector;
+       // thePlayer.transform.localRotation = teleportTarget.transform.localRotation;
+        //thePlayer.transform.rotation = teleportTarget.transform.rotation;
+        thePlayer.transform.eulerAngles = teleportTarget.transform.eulerAngles;
+
     }
 }
