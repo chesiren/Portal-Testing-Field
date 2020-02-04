@@ -8,9 +8,20 @@ public class Weapon : MonoBehaviour
     public GameObject dupe2;
     public GameObject portal1;
     public GameObject portal2;
-    
+
+    [SerializeField] private Transform m_CameraTransform = null;
+    public Transform m_HandTransform = null;
+    //[SerializeField] private Image m_CursorImage = null;
+    public float m_ThrowForce = 200f;
+
+    private RaycastHit m_RaycastFocus;
+    private bool m_CanInteract = false;
+    public bool holding = false;
+
     private void Start()
     {
+        m_CameraTransform = GetComponentInChildren<Camera>().transform;
+
         var _portal1 = portal1.GetComponent<Portal>();
         var _portal2 = portal2.GetComponent<Portal>();
         
@@ -33,50 +44,114 @@ public class Weapon : MonoBehaviour
 
         myRay = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetButtonDown("Fire3"))
+        // Has interact button been pressed whilst interactable object is in front of player?
+        if (Input.GetKeyDown("a") && m_CanInteract == true)
         {
-            if (Physics.Raycast(myRay, out hit))
+            IInteractable interactComponent = m_RaycastFocus.collider.transform.GetComponent<IInteractable>();
+
+            if (interactComponent != null)
             {
-                
-                GameObject a = Instantiate(portal1, hit.point, Quaternion.identity);
-                var _a = a.GetComponent<Portal>();
-                _a.pairPortal = dupe2.transform;
-                _dupe2.pairPortal = a.transform;
-                //a.GetComponent<Portal>().pairPortal = dupe2.transform;
-                a.transform.position = hit.point;
-                a.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
-                //a.transform.up = hit.normal;
-                
-                _a.plane.GetComponent<SeamlessTeleport>().player = gameObject;
-
-                _dupe2.plane.GetComponent<SeamlessTeleport>().receiver = _a.plane;
-                _a.plane.GetComponent<SeamlessTeleport>().receiver = _dupe2.plane;
-
-                Destroy(dupe1);
-                dupe1 = a.gameObject;
+                // Perform object's interaction
+                interactComponent.Interact(this);
             }
         }
 
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetButtonDown("Fire1"))
         {
-            if (Physics.Raycast(myRay, out hit))
+            if (holding)
             {
-                GameObject b = Instantiate(portal2, hit.point, Quaternion.identity);
-                var _b = b.GetComponent<Portal>();
-                _b.GetComponent<Portal>().pairPortal = dupe1.transform;
-                _dupe1.pairPortal = b.transform;
-                //b.GetComponent<Portal>().pairPortal = dupe1.transform;
-                b.transform.position = hit.point;
-                b.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
-                //b.transform.up = hit.normal;
-                _b.plane.GetComponent<SeamlessTeleport>().player = gameObject;
+                // throw object
+                if (m_CanInteract == true)
+                {
+                    IInteractable interactComponent = m_RaycastFocus.collider.transform.GetComponent<IInteractable>();
 
-                _dupe1.plane.GetComponent<SeamlessTeleport>().receiver = _b.plane;
-                _b.plane.GetComponent<SeamlessTeleport>().receiver = _dupe1.plane;
-
-                Destroy(dupe2);
-                dupe2 = b.gameObject;
+                    if (interactComponent != null)
+                    {
+                        // Perform object's action
+                        interactComponent.Action(this);
+                    }
+                }
             }
+            else
+            {
+                // fire portal
+                if (Physics.Raycast(myRay, out hit))
+                {
+                    GameObject a = Instantiate(portal1, hit.point, Quaternion.identity);
+                    var _a = a.GetComponent<Portal>();
+                    _a.pairPortal = dupe2.transform;
+                    _dupe2.pairPortal = a.transform;
+                    //a.GetComponent<Portal>().pairPortal = dupe2.transform;
+                    a.transform.position = hit.point;
+                    a.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
+                    //a.transform.up = hit.normal;
+
+                    _a.plane.GetComponent<SeamlessTeleport>().player = gameObject;
+
+                    _dupe2.plane.GetComponent<SeamlessTeleport>().receiver = _a.plane;
+                    _a.plane.GetComponent<SeamlessTeleport>().receiver = _dupe2.plane;
+
+                    Destroy(dupe1);
+                    dupe1 = a.gameObject;
+                }
+            }
+        }
+
+        if (Input.GetButtonDown("Fire2"))
+        {
+            if (holding)
+            {
+                // throw object
+                if (m_CanInteract == true)
+                {
+                    IInteractable interactComponent = m_RaycastFocus.collider.transform.GetComponent<IInteractable>();
+
+                    if (interactComponent != null)
+                    {
+                        // Perform object's action
+                        interactComponent.Action(this);
+                    }
+                }
+            }
+            else
+            {
+                // fire portal
+                if (Physics.Raycast(myRay, out hit) && holding == false)
+                {
+                    GameObject b = Instantiate(portal2, hit.point, Quaternion.identity);
+                    var _b = b.GetComponent<Portal>();
+                    _b.GetComponent<Portal>().pairPortal = dupe1.transform;
+                    _dupe1.pairPortal = b.transform;
+                    //b.GetComponent<Portal>().pairPortal = dupe1.transform;
+                    b.transform.position = hit.point;
+                    b.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hit.normal);
+                    //b.transform.up = hit.normal;
+                    _b.plane.GetComponent<SeamlessTeleport>().player = gameObject;
+
+                    _dupe1.plane.GetComponent<SeamlessTeleport>().receiver = _b.plane;
+                    _b.plane.GetComponent<SeamlessTeleport>().receiver = _dupe1.plane;
+
+                    Destroy(dupe2);
+                    dupe2 = b.gameObject;
+                }
+            }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        Ray ray = new Ray(m_CameraTransform.position, m_CameraTransform.forward);
+
+        // Is interactable object detected in front of player?
+        if (Physics.Raycast(ray, out m_RaycastFocus, 3) && m_RaycastFocus.collider.transform.CompareTag("Interactable"))
+        {
+            //m_CursorImage.color = Color.green;
+            m_CanInteract = true;
+        }
+        else
+        {
+            //m_CursorImage.color = Color.white;
+            m_CanInteract = false;
         }
     }
 }

@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    void Interact(PlayerController script);
-    void Action(PlayerController script);
+    void Interact(Weapon script);
+    void Action(Weapon script);
 }

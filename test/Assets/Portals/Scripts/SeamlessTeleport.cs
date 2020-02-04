@@ -7,7 +7,6 @@ public class SeamlessTeleport : MonoBehaviour
     public GameObject player;
     public GameObject receiver;
 
-    private float prevDot = 0;
     private bool playerOverlapping = false;
 
     void Update()
@@ -32,15 +31,13 @@ public class SeamlessTeleport : MonoBehaviour
                 player.GetComponent<Rigidbody>().velocity = keep;
                 playerOverlapping = false;
             }
-
-            prevDot = currentDot;
         }
     }
 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerOverlapping = true;
         }
@@ -48,7 +45,7 @@ public class SeamlessTeleport : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             playerOverlapping = false;
         }

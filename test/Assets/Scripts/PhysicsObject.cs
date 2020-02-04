@@ -27,15 +27,17 @@ public class PhysicsObject : MonoBehaviour, IInteractable
     }
 
     // Pick up the object, or drop it if it is already being held
-    public void Interact(PlayerController playerScript)
+    public void Interact(Weapon playerScript)
     {
         // Is the object currently being held?
         if (m_Held)
         {
             Drop();
+            playerScript.holding = false;
         }
         else
         {
+            playerScript.holding = true;
             m_Held = true;
             m_ThisRigidbody.useGravity = false;
 
@@ -46,12 +48,13 @@ public class PhysicsObject : MonoBehaviour, IInteractable
     }
 
     // Throw the object
-    public void Action(PlayerController playerScript)
+    public void Action(Weapon playerScript)
     {
         // Is the object currently being held?
         if (m_Held)
         {
             Drop();
+            playerScript.holding = false;
 
             // Force the object away in the opposite direction of the player
             Vector3 forceDir = transform.position - playerScript.m_HandTransform.position;

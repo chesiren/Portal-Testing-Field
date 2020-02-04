@@ -981,7 +981,6 @@ GameObject:
   - component: {fileID: 900971736}
   - component: {fileID: 899466840}
   - component: {fileID: 1943199543}
-  - component: {fileID: 903897017}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Player
@@ -989,21 +988,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &903897017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 903897016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58c3c7e4f7b46a448bd22b087d6e3a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CameraTransform: {fileID: 904381338}
-  m_HandTransform: {fileID: 883238646}
-  m_ThrowForce: 200
 --- !u!1 &903897018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,6 +2897,10 @@ MonoBehaviour:
   dupe2: {fileID: 2958224664014172039}
   portal1: {fileID: 793851080423380615, guid: 2fdbe81ced79ee44fbb866f137734d33, type: 3}
   portal2: {fileID: 2548747124442620427, guid: 4451fbef062bcdd4fbc6bb65e1a2eea1, type: 3}
+  m_CameraTransform: {fileID: 904381338}
+  m_HandTransform: {fileID: 883238646}
+  m_ThrowForce: 200
+  holding: 0
 --- !u!1 &1951742930
 GameObject:
   m_ObjectHideFlags: 0
