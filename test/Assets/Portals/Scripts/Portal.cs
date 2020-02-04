@@ -11,6 +11,7 @@ public class Portal : MonoBehaviour
 {
     public Camera portalCamera;
     public Transform pairPortal;
+    public GameObject plane;
     
     private void OnEnable()
     {

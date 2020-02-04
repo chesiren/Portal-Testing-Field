@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Portal Camera
+  - Interactable
   layers:
   - Default
   - TransparentFX

@@ -10,10 +10,6 @@ public class SeamlessTeleport : MonoBehaviour
     private float prevDot = 0;
     private bool playerOverlapping = false;
 
-    void Start()
-    {
-    }
-
     void Update()
     {
         if (playerOverlapping)
@@ -24,6 +20,7 @@ public class SeamlessTeleport : MonoBehaviour
             {
                 //Debug.Log(gameObject + " a " + receiver);
                 // transport him to the equivalent position in the other portal
+                Vector3 keep = player.GetComponent<Rigidbody>().velocity;
                 float rotDiff = -Quaternion.Angle(transform.rotation, receiver.transform.rotation);
                 rotDiff += 180;
                 player.transform.Rotate(Vector3.up, rotDiff);
@@ -32,7 +29,7 @@ public class SeamlessTeleport : MonoBehaviour
                 positionOffset = Quaternion.Euler(0, rotDiff, 0) * positionOffset;
                 var newPosition = receiver.transform.position + positionOffset;
                 player.transform.position = newPosition;
-
+                player.GetComponent<Rigidbody>().velocity = keep;
                 playerOverlapping = false;
             }
 
