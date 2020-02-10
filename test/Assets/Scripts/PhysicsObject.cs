@@ -5,9 +5,13 @@ using UnityEngine;
 public class PhysicsObject : MonoBehaviour, IInteractable
 {
     public bool m_Held = false;
+    public bool m_Cleanser = false;
 
     private Rigidbody m_ThisRigidbody = null;
     private FixedJoint m_HoldJoint = null;
+    public GameObject playercontroller;
+
+    public float counter = -1f;
 
 
     private void Start()
@@ -18,11 +22,30 @@ public class PhysicsObject : MonoBehaviour, IInteractable
 
     private void Update()
     {
+        if (m_Cleanser == true)
+        {
+            Drop();
+            playercontroller.GetComponent<Weapon>().holding = false;
+            m_ThisRigidbody.useGravity = false;
+            m_Cleanser = false;
+            gameObject.tag = "Untagged";
+        }
+        if (counter > -1)
+        {
+            counter -= Time.deltaTime;
+            //Debug.Log("timer left" + counter);
+            if (counter <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
+
         // If the holding joint has broken, drop the object
         if (m_HoldJoint == null && m_Held == true)
         {
             m_Held = false;
             m_ThisRigidbody.useGravity = true;
+            playercontroller.GetComponent<Weapon>().holding = false;
         }
     }
 

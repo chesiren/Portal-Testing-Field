@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     public GameObject dupe2;
     public GameObject portal1;
     public GameObject portal2;
+    public GameObject switch_prefab;
+    public AudioClip bouton;
 
     [SerializeField] private Transform m_CameraTransform = null;
     public Transform m_HandTransform = null;
@@ -47,12 +49,22 @@ public class Weapon : MonoBehaviour
         // Has interact button been pressed whilst interactable object is in front of player?
         if (Input.GetKeyDown("a") && m_CanInteract == true)
         {
-            IInteractable interactComponent = m_RaycastFocus.collider.transform.GetComponent<IInteractable>();
-
-            if (interactComponent != null)
+            
+            Physics.Raycast(myRay, out hit);
+            Debug.Log(hit.collider.gameObject);
+            if (hit.collider.gameObject == switch_prefab)
             {
-                // Perform object's interaction
-                interactComponent.Interact(this);
+                AudioSource.PlayClipAtPoint(bouton, switch_prefab.transform.position);
+            }
+            else
+            {
+                IInteractable interactComponent = m_RaycastFocus.collider.transform.GetComponent<IInteractable>();
+
+                if (interactComponent != null)
+                {
+                    // Perform object's interaction
+                    interactComponent.Interact(this);
+                }
             }
         }
 
@@ -91,6 +103,7 @@ public class Weapon : MonoBehaviour
                     _dupe2.plane.GetComponent<SeamlessTeleport>().receiver = _a.plane;
                     _a.plane.GetComponent<SeamlessTeleport>().receiver = _dupe2.plane;
 
+                    //hit.collider.enabled = false;
                     Destroy(dupe1);
                     dupe1 = a.gameObject;
                 }
