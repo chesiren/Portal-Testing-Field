@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class cleanser : MonoBehaviour
 {
+    private Weapon playerwep;
+
     void OnTriggerEnter(Collider other)
     {
+        playerwep = other.gameObject.GetComponent<Weapon>();
         if (other.CompareTag("Player"))
         {
             //Destroy(other.gameObject.GetComponent<Weapon>().dupe1);
-            other.gameObject.GetComponent<Weapon>().dupe1.SetActive(false);
+            playerwep.dupe1.SetActive(false);
+            playerwep.dupe1.GetComponent<Portal>().pairPortal = null;
+            playerwep.dupe1.GetComponent<Portal>().plane.GetComponent<SeamlessTeleport>().receiver = null;
             //Destroy(other.gameObject.GetComponent<Weapon>().dupe2);
-            other.gameObject.GetComponent<Weapon>().dupe2.SetActive(false);
+            playerwep.dupe2.SetActive(false);
+            playerwep.dupe2.GetComponent<Portal>().pairPortal = null;
+            playerwep.dupe2.GetComponent<Portal>().plane.GetComponent<SeamlessTeleport>().receiver = null;
             Debug.Log(other.gameObject + " a touché le cleanser");
         }
         if (other.CompareTag("Interactable"))

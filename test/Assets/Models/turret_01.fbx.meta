@@ -45,7 +45,17 @@ ModelImporter:
   - first:
       74: -7475574337227829931
     second: turret_01.qc_skeleton|retract
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turret_01
+    second: {fileID: 2100000, guid: 27d2d83c46a9435438b123c7cec2f275, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phy
+    second: {fileID: 2100000, guid: 67a62abc0b52c314cb863d23d7008023, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -74,11 +84,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: turret_01.qc_skeleton|aim_down
-      takeName: turret_01.qc_skeleton|aim_down
+      name: turret_01.qc_skeleton|idle (1)
+      takeName: turret_01.qc_skeleton|idle
       internalID: 1992053838897217518
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -531,10 +541,10 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

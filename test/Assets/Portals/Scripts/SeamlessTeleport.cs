@@ -11,7 +11,7 @@ public class SeamlessTeleport : MonoBehaviour
 
     void Update()
     {
-        if (playerOverlapping)
+        if (playerOverlapping && receiver != null)
         {
             var currentDot = Vector3.Dot(transform.up, player.transform.position - transform.position);
 

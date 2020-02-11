@@ -12,7 +12,17 @@ ModelImporter:
   - first:
       74: 3264527603255268317
     second: switch001.qc_skeleton|up
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phy
+    second: {fileID: 2100000, guid: 67a62abc0b52c314cb863d23d7008023, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: switch001
+    second: {fileID: 2100000, guid: 39be2e14429853d4784480416cb1bd8c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -179,10 +189,10 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

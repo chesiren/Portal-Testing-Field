@@ -101,7 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Held: 0
   m_Cleanser: 0
-  playercontroller: {fileID: 0}
+  playercontroller: {fileID: 2104359468789785161, guid: 0cbcc055b10136246911e282e0b67655,
+    type: 3}
   counter: -1
 --- !u!114 &742106177377403339
 MonoBehaviour:
