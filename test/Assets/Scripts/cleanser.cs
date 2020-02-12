@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cleanser : MonoBehaviour
+public class Cleanser : MonoBehaviour
 {
     private Weapon playerwep;
 
@@ -19,22 +19,14 @@ public class cleanser : MonoBehaviour
             playerwep.dupe2.SetActive(false);
             playerwep.dupe2.GetComponent<Portal>().pairPortal = null;
             playerwep.dupe2.GetComponent<Portal>().plane.GetComponent<SeamlessTeleport>().receiver = null;
-            Debug.Log(other.gameObject + " a touché le cleanser");
+            //Debug.Log(other.gameObject + " a touché le cleanser");
         }
         if (other.CompareTag("Interactable"))
         {
             other.gameObject.GetComponent<PhysicsObject>().m_Cleanser = true;
             other.gameObject.GetComponent<PhysicsObject>().counter = 2f;
-            other.gameObject.GetComponent<dead>().burn();
-            Debug.Log(other.gameObject + " a touché le cleanser");
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            //playerOverlapping = false;
+            other.gameObject.GetComponent<Dead>().Burn();
+            //Debug.Log(other.gameObject + " a touché le cleanser");
         }
     }
 }

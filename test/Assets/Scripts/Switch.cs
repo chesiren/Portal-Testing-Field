@@ -7,6 +7,7 @@ public class Switch : MonoBehaviour
     public AudioClip son;
     Animation animations;
     public bool state = true;
+    public GameObject button;
 
     void Start()
     {

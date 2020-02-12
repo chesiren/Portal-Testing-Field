@@ -56,7 +56,7 @@ public class Weapon : MonoBehaviour
         {
             
             Physics.Raycast(myRay, out hit);
-            Debug.Log(hit.collider.gameObject);
+            //Debug.Log(hit.collider.gameObject);
             if (hit.collider.gameObject == switch_prefab)
             {
                 hit.collider.gameObject.GetComponent<Switch>().ButtonPressed();
@@ -151,7 +151,6 @@ public class Weapon : MonoBehaviour
                         var _b = b.GetComponent<Portal>();
                         if (dupe1.activeSelf == true)
                         {
-                            Debug.Log("yes");
                             _b.pairPortal = dupe1.transform;
                             _dupe1.pairPortal = b.transform;
 

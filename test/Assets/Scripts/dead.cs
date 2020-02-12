@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dead : MonoBehaviour
+public class Dead : MonoBehaviour
 {
     public GameObject child;
 
     public Material[] material;
     Renderer rend;
-    // Start is called before the first frame update
+    
     void Start()
     {
         rend = child.GetComponent<Renderer>();
@@ -16,9 +16,9 @@ public class dead : MonoBehaviour
         rend.sharedMaterial = material[0];
     }
 
-    public void burn()
+    public void Burn()
     { 
         rend.sharedMaterial = material[1];
-        Debug.Log("burn");
+        //Debug.Log("burn");
     }
 }
