@@ -7,7 +7,7 @@ public class GroundButton : MonoBehaviour
     public bool state = false;
     public GameObject skeleton;
     private int nb;
-
+      
     public void Up()
     {
         skeleton.transform.Translate(Vector3.up * 1 / 7, Space.World);

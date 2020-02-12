@@ -24,16 +24,14 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
         }
 
 
-        [MenuItem("Mobile Input/Enable")]
-        private static void Enable()
+        //[MenuItem("Mobile Input/Enable")]
+        /*private static void Enable()
         {
             SetEnabled("MOBILE_INPUT", true, true);
             switch (EditorUserBuildSettings.activeBuildTarget)
             {
                 case BuildTarget.Android:
                 case BuildTarget.iOS:
-                case BuildTarget.PSM: 
-                case BuildTarget.Tizen: 
                 case BuildTarget.WSAPlayer: 
                     EditorUtility.DisplayDialog("Mobile Input",
                                                 "You have enabled Mobile Input. You'll need to use the Unity Remote app on a connected device to control your game in the Editor.",
@@ -46,19 +44,19 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
                                                 "OK");
                     break;
             }
-        }
+        }*/
 
 
-        [MenuItem("Mobile Input/Enable", true)]
-        private static bool EnableValidate()
+        //[MenuItem("Mobile Input/Enable", true)]
+        /*private static bool EnableValidate()
         {
             var defines = GetDefinesList(mobileBuildTargetGroups[0]);
             return !defines.Contains("MOBILE_INPUT");
-        }
+        }*/
 
 
-        [MenuItem("Mobile Input/Disable")]
-        private static void Disable()
+        //[MenuItem("Mobile Input/Disable")]
+        /*private static void Disable()
         {
             SetEnabled("MOBILE_INPUT", false, true);
             switch (EditorUserBuildSettings.activeBuildTarget)
@@ -70,30 +68,28 @@ namespace UnityStandardAssets.CrossPlatformInput.Inspector
                                                 "OK");
                     break;
             }
-        }
+        }*/
 
 
-        [MenuItem("Mobile Input/Disable", true)]
-        private static bool DisableValidate()
+        //[MenuItem("Mobile Input/Disable", true)]
+        /*private static bool DisableValidate()
         {
             var defines = GetDefinesList(mobileBuildTargetGroups[0]);
             return defines.Contains("MOBILE_INPUT");
-        }
+        }*/
 
 
-        private static BuildTargetGroup[] buildTargetGroups = new BuildTargetGroup[]
+        private static readonly BuildTargetGroup[] buildTargetGroups = new BuildTargetGroup[]
             {
                 BuildTargetGroup.Standalone,
                 BuildTargetGroup.Android,
                 BuildTargetGroup.iOS
             };
 
-        private static BuildTargetGroup[] mobileBuildTargetGroups = new BuildTargetGroup[]
+        private static readonly BuildTargetGroup[] mobileBuildTargetGroups = new BuildTargetGroup[]
             {
                 BuildTargetGroup.Android,
                 BuildTargetGroup.iOS,
-                BuildTargetGroup.PSM, 
-                BuildTargetGroup.Tizen,
                 BuildTargetGroup.WSA 
             };
 
