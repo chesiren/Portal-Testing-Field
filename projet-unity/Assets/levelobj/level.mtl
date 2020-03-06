@@ -1,0 +1,274 @@
+# CONCRETE/CONCRETE_MODULAR_FLOOR001A
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_0.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001E
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_1.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001A
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_2.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001D
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_3.tga
+
+# CONCRETE/CONCRETE_MODULAR_CEILING001A
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_4.tga
+
+# CONCRETE/CONCRETE_MODULAR_FLOOR001B
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_5.tga
+
+# LIGHTS/LIGHT_RECESSEDCOOL002
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_6.tga
+
+# LIGHTS/LIGHT_ORANGE001
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_7.tga
+
+# METAL/METALWALL_BTS_006B_GRADIENT
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_8.tga
+
+# METAL/METALWALL_BTS_006A
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_9.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001C
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_10.tga
+
+# PLASTIC/PLASTICWALL001A
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_11.tga
+
+# METAL/METALWALL048B
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_12.tga
+
+# CONCRETE/CONCRETE_MODULAR_FLOOR001C
+newmtl material_13
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_13.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001F
+newmtl material_14
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_14.tga
+
+# PLASTIC/PLASTICWALL001B
+newmtl material_15
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_15.tga
+
+# LIGHTS/WHITE008
+newmtl material_16
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_16.tga
+
+# CONCRETE/OBSERVATIONWALL_001B
+newmtl material_17
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_17.tga
+
+# TILE/OBSERVATION_TILEFLOOR001A
+newmtl material_18
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_18.tga
+
+# CONCRETE/OBSERVATIONWALL_001A
+newmtl material_19
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_19.tga
+
+# PLASTIC/PLASTICWALL004A
+newmtl material_20
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_20.tga
+
+# PLASTIC/PLASTIC_LIGHT002A
+newmtl material_21
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_21.tga
+
+# LIGHTS/WHITE009
+newmtl material_22
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_22.tga
+
+# PLASTIC/PLASTICWALL002A
+newmtl material_23
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_23.tga
+
+# METAL/METALGRATE018
+newmtl material_24
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_24.tga
+
+# METAL/METALGRATE018B
+newmtl material_25
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd level_material_25.tga
+
+# PLASTIC/PLASTIC_LIGHT002C
+newmtl material_26
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_26.tga
+
+# SIGNAGE/HAZARD_ORANGE_03B
+newmtl material_27
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_27.tga
+
+# METAL/METAL_LIFT001
+newmtl material_28
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_28.tga
+
+# METAL/METAL_LIFT001_GRADIENT
+newmtl material_29
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_29.tga
+
+# SIGNAGE/CLOCK/CLOCK_DOTS
+newmtl material_30
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_30.tga
+
+# METAL/METALWALL048C
+newmtl material_31
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_31.tga
+
+# PLASTIC/PLASTICWALL003A
+newmtl material_32
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_32.tga
+
+# SIGNAGE/SIGNAGE_ARROW
+newmtl material_33
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_33.tga
+
+# SIGNAGE/SIGNAGE_BORDER
+newmtl material_34
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_34.tga
+
+# SIGNAGE/SIGNAGE_EXIT
+newmtl material_35
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_35.tga
+
+# GLASS/GLASSWINDOW_REFRACT01
+newmtl material_36
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd c:\program files (x86)\steam\SteamApps\common\half-life 2\hl2\materials\glass\glasswindow_refract01.vmt
+
+# SIGNAGE/SIGNAGE_DOORSTATE
+newmtl material_37
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_37.tga
+
+# SIGNAGE/CLOCK/CLOCK_MINUTES
+newmtl material_38
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_38.tga
+
+# SIGNAGE/CLOCK/CLOCK_SECONDS
+newmtl material_39
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_39.tga
+
+# SIGNAGE/CLOCK/CLOCK_CENTISECONDS
+newmtl material_40
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_40.tga
+
+# SIGNAGE/CLOCK/CLOCK_MILLISECONDS
+newmtl material_41
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd level_material_41.tga
+
+# GLASS/GLASSWINDOW_FROSTED_002
+newmtl material_42
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd level_material_42.tga
+
+# GLASS/GLASSWINDOW_FROSTED
+newmtl material_43
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd level_material_43.tga
+
+# GLASS/GLASSWINDOW_FROSTED_003
+newmtl material_44
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd level_material_44.tga
+
