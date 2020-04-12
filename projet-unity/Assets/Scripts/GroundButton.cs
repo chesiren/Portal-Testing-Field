@@ -36,24 +36,24 @@ public class GroundButton : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "FPSController" || other.gameObject.GetComponent<PhysicsObject>().type == "cube" && other.gameObject.GetComponent<PhysicsObject>().burnbutton != true)
+        if (other.gameObject.name == "Player" || other.gameObject.GetComponent<PhysicsObject>().type == "cube" && other.gameObject.GetComponent<PhysicsObject>().burnbutton != true)
         {
             nb += 1;
             if (nb == 1)
                 Down();
         }
-        //Debug.Log(nb + " entrer " + other.gameObject);
+        Debug.Log(nb + " entrer " + other.gameObject);
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "FPSController" || other.gameObject.GetComponent<PhysicsObject>().type == "cube" && other.gameObject.GetComponent<PhysicsObject>().burnbutton != true)
+        if (other.gameObject.name == "Player" || other.gameObject.GetComponent<PhysicsObject>().type == "cube" && other.gameObject.GetComponent<PhysicsObject>().burnbutton != true)
         {
             nb -= 1;
             if (nb == 0)
                 Up();
         }
-        //Debug.Log(nb + " sortie " + other.gameObject);
+        Debug.Log(nb + " sortie " + other.gameObject);
     }
     public void Refresh()
     {
@@ -61,7 +61,7 @@ public class GroundButton : MonoBehaviour
     }
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.name != "FPSController" && other.gameObject.GetComponent<PhysicsObject>().type == "cube")
+        if (other.gameObject.name != "Player" && other.gameObject.GetComponent<PhysicsObject>().type == "cube")
         {
             if (other.gameObject.tag == "Untagged" && other.gameObject.GetComponent<PhysicsObject>().burnbutton == false)
             {

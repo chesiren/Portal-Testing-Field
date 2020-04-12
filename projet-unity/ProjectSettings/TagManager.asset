@@ -9,6 +9,7 @@ TagManager:
   - Interactable
   - Portal Camera
   - Cleanser
+  - Portal
   layers:
   - Default
   - TransparentFX
@@ -18,12 +19,12 @@ TagManager:
   - UI
   - 
   - 
-  - wall
-  - enter
-  - exit
+  - Wall
+  - Enter
+  - Exit
   - PostProcessing
-  - portal
-  - 
+  - Portal
+  - Screen
   - 
   - 
   - 

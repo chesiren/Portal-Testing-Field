@@ -1,0 +1,208 @@
+# CONCRETE/CONCRETE_MODULAR_WALL001E
+newmtl material_0
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_0.tga
+
+# CHESIREN/WALL
+newmtl material_1
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd unitytestchamber_material_1.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001A
+newmtl material_2
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_2.tga
+
+# CONCRETE/OBSERVATIONWALL_001B
+newmtl material_3
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_3.tga
+
+# TILE/OBSERVATION_TILEFLOOR001A
+newmtl material_4
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_4.tga
+
+# METAL/METALDOOR028A
+newmtl material_5
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_5.tga
+
+# CONCRETE/OBSERVATIONWALL_001A
+newmtl material_6
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_6.tga
+
+# PLASTIC/PLASTIC_LIGHT002A
+newmtl material_7
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_7.tga
+
+# LIGHTS/WHITE009
+newmtl material_8
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_8.tga
+
+# PLASTIC/PLASTIC_LIGHT002C
+newmtl material_9
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_9.tga
+
+# PLASTIC/PLASTICWALL004A
+newmtl material_10
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_10.tga
+
+# PLASTIC/PLASTICWALL001A
+newmtl material_11
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_11.tga
+
+# GLASS/GLASSWINDOW_REFRACT01
+newmtl material_12
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd c:\program files (x86)\steam\SteamApps\common\half-life 2\hl2\materials\glass\glasswindow_refract01.vmt
+
+# TOOLS/TOOLSINVISIBLE
+newmtl material_13
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd unitytestchamber_material_13.tga
+
+# LIGHTS/LIGHT_RECESSEDCOOL002
+newmtl material_14
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_14.tga
+
+# CONCRETE/CONCRETE_MODULAR_FLOOR001A
+newmtl material_15
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_15.tga
+
+# SIGNAGE/HAZARD_ORANGE_03B
+newmtl material_16
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_16.tga
+
+# METAL/METALWALL_BTS_006A
+newmtl material_17
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_17.tga
+
+# DEV/REFLECTIVITY_40
+newmtl material_18
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_18.tga
+
+# METAL/METALWALL_BTS_006B_GRADIENT
+newmtl material_19
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_19.tga
+
+# LIGHTS/LIGHT_ORANGE001
+newmtl material_20
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_20.tga
+
+# CONCRETE/CONCRETE_MODULAR_CEILING001A
+newmtl material_21
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_21.tga
+
+# SIGNAGE/SIGNAGE_DOORSTATE
+newmtl material_22
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_22.tga
+
+# SIGNAGE/SIGNAGE_BORDER
+newmtl material_23
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_23.tga
+
+# SIGNAGE/SIGNAGE_ARROW
+newmtl material_24
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_24.tga
+
+# SIGNAGE/SIGNAGE_EXIT
+newmtl material_25
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_25.tga
+
+# METAL/METALWALL048B
+newmtl material_26
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_26.tga
+
+# GLASS/GLASSWINDOW_FROSTED_002
+newmtl material_27
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd unitytestchamber_material_27.tga
+
+# GLASS/GLASSWINDOW_FROSTED_003
+newmtl material_28
+Kd 1.0000 1.0000 1.0000
+d 1.0000
+illum 0
+map_Kd unitytestchamber_material_28.tga
+
+# CONCRETE/CONCRETE_MODULAR_WALL001F
+newmtl material_29
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_29.tga
+
+# PLASTIC/PLASTICWALL001B
+newmtl material_30
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_30.tga
+
+# LIGHTS/WHITE008
+newmtl material_31
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_31.tga
+
+# METAL/METALWALL061F
+newmtl material_32
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_32.tga
+
+# METAL/METALWALL048C
+newmtl material_33
+Kd 1.0000 1.0000 1.0000
+illum 0
+map_Kd unitytestchamber_material_33.tga
+

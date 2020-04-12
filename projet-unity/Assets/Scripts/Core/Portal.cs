@@ -123,12 +123,21 @@ public class Portal : MonoBehaviour {
     public float nearClipOffset = 0.05f;
     public float nearClipLimit = 0.2f;
 
+    [Header("Corners")]
+    public GameObject topleft;
+    public GameObject topright;
+    public GameObject bottomleft;
+    public GameObject bottomright;
+
+
     // Private variables
     RenderTexture viewTexture;
     public Camera portalCam;
     Camera playerCam;
     List<PortalTraveller> trackedTravellers;
     MeshFilter screenMeshFilter;
+
+    
 
     void Awake () {
         playerCam = Camera.main;

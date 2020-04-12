@@ -6586,6 +6586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1579655584799545655}
   - component: {fileID: 1579655584799545608}
+  - component: {fileID: 8641069266904105304}
   - component: {fileID: 1579655584799545654}
   - component: {fileID: 1579655584799545800}
   m_Layer: 10
@@ -6630,6 +6631,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &8641069266904105304
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579655584799545653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1579655584799545654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6673,7 +6688,6 @@ MonoBehaviour:
     type: 3}
   portalgun: {fileID: 45832616761101670}
   CrossHair: {fileID: 0}
-  m_CameraTransform: {fileID: 1579655585306407580}
   m_HandTransform: {fileID: 45832616860390608}
   m_ThrowForce: 200
   holding: 0
