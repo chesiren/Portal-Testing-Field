@@ -3,7 +3,37 @@ guid: 27b56883e7e605d439c0911e252aa3f7
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_0Mat
+    second: {fileID: 2100000, guid: 9bed7c8ad4c6f414d84477c6df7416cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_1Mat
+    second: {fileID: 2100000, guid: 35ad18c507637194aa3a4bdf04be0e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_2Mat
+    second: {fileID: 2100000, guid: 838881381a0bcd841919fd4a7bacd53f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_3Mat
+    second: {fileID: 2100000, guid: 87c26f509be13f34ebedf6840e233937, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_4Mat
+    second: {fileID: 2100000, guid: 97f3d8bb63b55fa40bdf2ea23b8bb192, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.signage_num00_reference.smd.mesh_5Mat
+    second: {fileID: 2100000, guid: 6862776f6a245ea4a9fcea40a0547239, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,7 +73,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

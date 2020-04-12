@@ -13,30 +13,34 @@ public class PortalPhysicsObject : PortalTraveller {
     void Awake () {
         rigidbody = GetComponent<Rigidbody> ();
 
-        if(GraphicsObject.GetComponent<MeshRenderer>())
-            GraphicsObject.GetComponent<MeshRenderer>().material.color = colors[i];
-
-        if (GraphicsObject.GetComponent<SkinnedMeshRenderer>())
-            GraphicsObject.GetComponent<SkinnedMeshRenderer>().material.color = colors[i];
-
-        i++;
-        if (i > colors.Length - 1)
+        if (colors.Length > 0)
         {
-            i = 0;
-        }
+            if (GraphicsObject.GetComponent<MeshRenderer>())
+                GraphicsObject.GetComponent<MeshRenderer>().material.color = colors[i];
 
-        if (GraphicsObject2)
-        {
-            if (GraphicsObject2.GetComponent<MeshRenderer>())
-                GraphicsObject2.GetComponent<MeshRenderer>().material.color = colors[i2];
+            if (GraphicsObject.GetComponent<SkinnedMeshRenderer>())
+                GraphicsObject.GetComponent<SkinnedMeshRenderer>().material.color = colors[i];
 
-            if (GraphicsObject2.GetComponent<SkinnedMeshRenderer>())
-                GraphicsObject2.GetComponent<SkinnedMeshRenderer>().material.color = colors[i2];
-
-            i2++;
-            if (i2 > colors.Length - 1)
+            i++;
+            if (i > colors.Length - 1)
             {
-                i2 = 0;
+                i = 0;
+            }
+
+
+            if (GraphicsObject2)
+            {
+                if (GraphicsObject2.GetComponent<MeshRenderer>())
+                    GraphicsObject2.GetComponent<MeshRenderer>().material.color = colors[i2];
+
+                if (GraphicsObject2.GetComponent<SkinnedMeshRenderer>())
+                    GraphicsObject2.GetComponent<SkinnedMeshRenderer>().material.color = colors[i2];
+
+                i2++;
+                if (i2 > colors.Length - 1)
+                {
+                    i2 = 0;
+                }
             }
         }
     }

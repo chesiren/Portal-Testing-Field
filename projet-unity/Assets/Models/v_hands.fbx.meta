@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 6284982019629589460
     second: v_hands.qc_skeleton|admire
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: v_hands
+    second: {fileID: 2100000, guid: 559a2a63e6bcd2d4eb08db261c78113b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -75,7 +80,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

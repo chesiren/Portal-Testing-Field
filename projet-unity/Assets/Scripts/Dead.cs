@@ -6,19 +6,18 @@ public class Dead : MonoBehaviour
 {
     public GameObject child;
 
-    public Material[] material;
+    public Material material;
     Renderer rend;
     
     void Start()
     {
         rend = child.GetComponent<Renderer>();
-        rend.enabled = true;
-        rend.sharedMaterial = material[0];
     }
 
     public void Burn()
-    { 
-        rend.sharedMaterial = material[1];
+    {
+        rend.enabled = true;
+        rend.sharedMaterial = material;
         //Debug.Log("burn");
     }
 }

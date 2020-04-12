@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: burn
-  m_Shader: {fileID: 4800000, guid: 3cb4edf148ad26048a4006bc8cc5ab20, type: 3}
+  m_Shader: {fileID: 4800000, guid: aaeaf3dc8c9344c5fa572f7789c131cc, type: 3}
   m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
@@ -73,9 +73,9 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
-    - _Glossiness: 0
+    - _Glossiness: 0.103
     - _GlossyReflections: 0
-    - _Metallic: 1
+    - _Metallic: 0.121
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -89,11 +89,14 @@ Material:
     - _UVSec: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - sliceOffsetDst: 0
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Color: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
-    - _EmissionColor: {r: 0.05490196, g: 0.0019607844, b: 0.0029411765, a: 1}
+    - _Color: {r: 0.5283019, g: 0, b: 0.010358955, a: 1}
+    - _EmissionColor: {r: 0.13207549, g: 0.029854795, b: 0.021804912, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - sliceCentre: {r: 0, g: 0, b: 0, a: 0}
+    - sliceNormal: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &6477670869909673046
 MonoBehaviour:
   m_ObjectHideFlags: 11

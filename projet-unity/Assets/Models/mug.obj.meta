@@ -3,7 +3,12 @@ guid: aee7ff501c2e1184bb1446a47a4295de
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body.garbage_coffeemug001a_forevergibs_reference.smd.mesh_0Mat
+    second: {fileID: 2100000, guid: e124f92a7f3a19a458406737ad79117f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,7 +48,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
