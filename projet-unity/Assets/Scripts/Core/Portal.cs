@@ -534,7 +534,7 @@ public class Portal : MonoBehaviour {
                     Renderer rendererToEdit = cube.GetComponent<Renderer>();
                     foreach (Material mat in rendererToEdit.materials)
                     {
-                        mat.color = Color.green;
+                        //mat.color = Color.green;
                         cube.layer = 0;
                     }
                 }
@@ -554,7 +554,7 @@ public class Portal : MonoBehaviour {
                     Renderer rendererToEdit = cube.GetComponent<Renderer>();
                     foreach (Material mat in rendererToEdit.materials)
                     {
-                        mat.color = Color.red;
+                        //mat.color = Color.red;
                         cube.layer = 8;
                     }
                     colored.Add(cube);
