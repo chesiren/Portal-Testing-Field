@@ -110,11 +110,11 @@
     <Compile Include="Assets\External Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\External Assets\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\External Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
-    <Compile Include="Assets\PortalPhysicsHands.cs" />
     <Compile Include="Assets\Portals\Scripts\Portalold.cs" />
     <Compile Include="Assets\Portals\Scripts\SeamlessTeleport.cs" />
     <Compile Include="Assets\Scripts\BoxDropper.cs" />
     <Compile Include="Assets\Scripts\ChangeLayer.cs" />
+    <Compile Include="Assets\Scripts\Chargement.cs" />
     <Compile Include="Assets\Scripts\Cleanser.cs" />
     <Compile Include="Assets\Scripts\Core\CameraUtility.cs" />
     <Compile Include="Assets\Scripts\Core\MainCamera.cs" />
@@ -136,8 +136,14 @@
     <Compile Include="Assets\Scripts\IFPSInteractable.cs" />
     <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\Line.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MenuAnimation.cs" />
     <Compile Include="Assets\Scripts\Moove.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PhysicsObject.cs" />
+    <Compile Include="Assets\Scripts\PortalPhysicsHands.cs" />
+    <Compile Include="Assets\Scripts\Retour.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\Scripts\Weapon.cs" />

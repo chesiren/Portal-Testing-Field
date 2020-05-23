@@ -79,13 +79,8 @@ public class FPSController : PortalTraveller {
             Cursor.visible = true;
             Debug.Break ();
         }
-        if (Input.GetKeyDown (KeyCode.O)) {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            disabled = !disabled;
-        }
 
-        if (disabled) {
+        if (PauseMenu.GameIsPaused) {
             return;
         }
         

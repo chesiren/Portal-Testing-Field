@@ -11,6 +11,8 @@ public class FPSWeapon : MonoBehaviour
     public GameObject portalgun;
     public Image CrossHair;
 
+    bool disabled;
+
     int layerMask = 1 << 12;
     Animation anim;
 
@@ -62,6 +64,12 @@ public class FPSWeapon : MonoBehaviour
 
     void Update()
     {
+
+        if (PauseMenu.GameIsPaused)
+        {
+            return;
+        }
+
         Ray myRay = Camera.main.ScreenPointToRay(Input.mousePosition); ;
         RaycastHit hit;
 
