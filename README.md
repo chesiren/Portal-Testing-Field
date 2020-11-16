@@ -1,4 +1,8 @@
-# Projet portal unity
+# Portal: Testing field    
+A portal re-creation made on Unity for a school project.    
+The project is finished i probably wont update this again, feel free to use.      
+
 Trello: https://trello.com/b/fntNpXtt/unity#     
-gameplay du jeu (v1): https://cdn.discordapp.com/attachments/409306681462226944/680905040059170817/portal.mp4
-gameplay du jeu (v2): https://cdn.discordapp.com/attachments/686315055939321856/699003609920176210/v2.mp4
+Gameplay of the game: https://www.youtube.com/watch?v=Zrm4kOOg7G4     
+Thanks to Sebastian Lague for the portals: https://github.com/SebLague/Portals/tree/master      
+All assets are from Portal     
